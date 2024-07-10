@@ -9,7 +9,7 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={weather}
-          link="https://github.com/Parth-2005/weather-app.git"
+          link="https://github.com/parth-2005/weather-app.git"
           h3="Weather App"
           p="Weather app built using Flutter and OpenWeatherMap API."
         />

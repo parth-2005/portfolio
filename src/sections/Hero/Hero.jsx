@@ -10,6 +10,7 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from '../../assets/Resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
+import { Typewriter } from 'react-simple-typewriter'
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -39,10 +40,20 @@ function Hero() {
           Parth
           Panot
         </h1>
-        <h2>Software Developer</h2>
-        <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+        <h2 className={styles.typewriter}><Typewriter
+          words={['Web Dev', 'Python Dev', 'Cyber Security Enthusiast']}
+            loop={0}
+            cursor
+            cursorStyle='|'
+            typeSpeed={60}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          /></h2><p className={styles.description}>
+          <b>
+          Innovating with modern technologies to create futuristic solutions.
+          </b>
+
+
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
@@ -51,7 +62,7 @@ function Hero() {
           <a href="https://x.com/2005_pparth" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/Parth-2005" target="_blank">
+          <a href="https://github.com/parth-2005" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
           <a href="https://www.linkedin.com/in/parth-panot-005b01245/" target="_blank">
